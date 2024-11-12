@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- EditText for user input -->
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text to save"
+        android:inputType="textMultiLine"
+        android:minHeight="150dp"/>
+
+    <!-- Button to create directory -->
+    <Button
+        android:id="@+id/createDirectoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Directory"/>
+
+    <!-- Button to save file with user input -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save File"/>
+
+    <!-- Button to list files in the directory -->
+    <Button
+        android:id="@+id/listFilesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List Files"/>
+
+    <!-- Button to check permissions -->
+    <Button
+        android:id="@+id/checkPermissionsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Permissions"/>
+
+    <!-- Feedback TextView to display messages -->
+    <TextView
+        android:id="@+id/feedbackTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- ListView to display the list of files in the directory -->
+    <ListView
+        android:id="@+id/filesListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:padding="10dp"/>
+</LinearLayout>
